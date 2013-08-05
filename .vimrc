@@ -1,4 +1,5 @@
 set nocompatible
+colors zenburn
 set number
 set expandtab
 set tabstop=4
