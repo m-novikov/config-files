@@ -20,5 +20,6 @@ Bundle 'gmarik/vundle'
 
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
+Bundle 'shawncplus/phpcomplete.vim'
 
 filetype plugin indent on   
