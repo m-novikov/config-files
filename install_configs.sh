@@ -50,5 +50,11 @@ function create_symlinks {
 	done;
 }
 
+function vim_install {
+    git --git-dir=$DIR submodule update --init
+    vim +BundleInstall +qall
+}
+
 create_backup
 create_symlinks
+vim_install
