@@ -1,0 +1,22 @@
+Xft.dpi: 96
+Xft.antialias: 0
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+Xft.rgba: rgb
+xterm*faceName: -*-terminus-*-*-*-*-16-*-*-*-*-*-*-* 
+xterm*faceSize: 10
+xterm*background: #222222 
+xterm*foreground: #33ffcc
+XTerm*VT100.translations: #override : select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
+
+URxvt.font: xft:Terminus:pixelsize=14:style=regular
+URxvt.background: #111111
+URxvt.foreground: #F0FFF0
+
+URxvt.urgentOnBell: true
+
+URxvt.perl-ext-common: default,tabbed,matcher,-option-popup,-selection-popup,-readline
+URxvt.matcher.button: 1
+URxvt.urlLauncher: firefox
+Emacs.font: -*-terminus-medium-*-*-*-16-*-*-*-*-*-*-u
+Vim.font: -*-terminus-medium-*-*-*-16-*-*-*-*-*-*-*
