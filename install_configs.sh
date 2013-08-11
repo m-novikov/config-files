@@ -8,7 +8,7 @@
 
 DIR=./config-files
 BACKUP=./config-files.back
-FILES=".vimrc .vim"
+FILES=".vimrc .vim .zshrc .Xdefaults"
 
 ########
 
