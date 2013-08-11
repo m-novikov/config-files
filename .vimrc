@@ -59,6 +59,10 @@ Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'shawncplus/phpcomplete.vim'
+Bundle 'ervandew/supertab'
+Bundle 'SirVer/ultisnips'
+
+Bundle 'taglist.vim'
 
 filetype plugin indent on   
 
@@ -66,3 +70,8 @@ filetype plugin indent on
 map <F4> ;NERDTreeToggle<CR>
 let g:NERDTreeWinPos = "right"
 
+" Supertab configuration
+let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+
+" Taglist configuration
+map <F3> ;TlistToggle<CR>
