@@ -9,6 +9,9 @@ set imsearch=0
 set hlsearch        " Highlight all matches
 set ignorecase      " Ignore case in patterns
 
+" Swap 
+set dir=~/.vim/swp
+
 " Visual/Interface
 
 " Gnome term suppors 256 colors
@@ -59,10 +62,11 @@ Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'shawncplus/phpcomplete.vim'
-Bundle 'ervandew/supertab'
 Bundle 'SirVer/ultisnips'
+Bundle 'scrooloose/syntastic'
 
 Bundle 'taglist.vim'
+Bundle 'bufexplorer.zip'
 
 filetype plugin indent on   
 
