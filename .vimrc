@@ -2,6 +2,8 @@ set nocompatible " No compatbile with vi
 
 " Localization
 set keymap=russian-jcukenwin " Set russian layout
+set encoding=utf-8
+set fileencoding=utf-8
 
 " Search
 set iminsert=0
@@ -19,7 +21,8 @@ if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
 
-colors herald       " Color scheme
+set background=dark
+colors zenburn      " Color scheme
 set number          " Display line numbers
 set novisualbell    " Disable flashing
 set showcmd         " Display command 
@@ -51,6 +54,7 @@ map n nzz
 noremap ; :
 noremap : ;
 inoremap jj <ESC>
+inoremap <M-Space> <C-X><C-O>
 
 
 " Vundle
@@ -62,8 +66,10 @@ Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'shawncplus/phpcomplete.vim'
-Bundle 'SirVer/ultisnips'
 Bundle 'scrooloose/syntastic'
+Bundle 'SirVer/ultisnips'
+"Bundle 'garbas/vim-snipmate'
+Bundle 'altercation/vim-colors-solarized'
 
 Bundle 'taglist.vim'
 Bundle 'bufexplorer.zip'
@@ -73,9 +79,14 @@ filetype plugin indent on
 " NERDTree configuration
 map <F4> ;NERDTreeToggle<CR>
 let g:NERDTreeWinPos = "right"
+let NERDTreeShowHidden=1
 
 " Supertab configuration
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 
 " Taglist configuration
 map <F3> ;TlistToggle<CR>
+
+"" Functions
+" Open file in cp1251
+map <F12> ;e ++enc=cp1251 %<CR>

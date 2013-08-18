@@ -1,0 +1,83 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BIN_PATH	../../../work/projects/test_app/protected/yiic.bat	/^set BIN_PATH=%~dp0$/;"	v
+ContactForm	../../../work/projects/test_app/protected/models/ContactForm.php	/^class ContactForm extends CFormModel$/;"	c
+Controller	../../../work/projects/test_app/protected/components/Controller.php	/^class Controller extends CController$/;"	c
+LoginForm	../../../work/projects/test_app/protected/models/LoginForm.php	/^class LoginForm extends CFormModel$/;"	c
+PHP_COMMAND	../../../work/projects/test_app/protected/yiic.bat	/^if "%PHP_COMMAND%" == "" set PHP_COMMAND=php.exe$/;"	v
+SiteController	../../../work/projects/test_app/protected/controllers/SiteController.php	/^class SiteController extends Controller$/;"	c
+SiteTest	../../../work/projects/test_app/protected/tests/functional/SiteTest.php	/^class SiteTest extends WebTestCase$/;"	c
+TEST_BASE_URL	../../../work/projects/test_app/protected/tests/WebTestCase.php	/^define('TEST_BASE_URL','http:\/\/localhost\/testdrive\/index-test.php\/');$/;"	d
+UserIdentity	../../../work/projects/test_app/protected/components/UserIdentity.php	/^class UserIdentity extends CUserIdentity$/;"	c
+WebTestCase	../../../work/projects/test_app/protected/tests/WebTestCase.php	/^class WebTestCase extends CWebTestCase$/;"	c
+_identity	../../../work/projects/test_app/protected/models/LoginForm.php	/^			$this->_identity=new UserIdentity($this->username,$this->password);$/;"	v
+_identity	../../../work/projects/test_app/protected/models/LoginForm.php	/^	private $_identity;$/;"	v
+actionContact	../../../work/projects/test_app/protected/controllers/SiteController.php	/^	public function actionContact()$/;"	f
+actionError	../../../work/projects/test_app/protected/controllers/SiteController.php	/^	public function actionError()$/;"	f
+actionIndex	../../../work/projects/test_app/protected/controllers/SiteController.php	/^	public function actionIndex()$/;"	f
+actionLogin	../../../work/projects/test_app/protected/controllers/SiteController.php	/^	public function actionLogin()$/;"	f
+actionLogout	../../../work/projects/test_app/protected/controllers/SiteController.php	/^	public function actionLogout()$/;"	f
+actions	../../../work/projects/test_app/protected/controllers/SiteController.php	/^	public function actions()$/;"	f
+attributeLabels	../../../work/projects/test_app/protected/models/ContactForm.php	/^	public function attributeLabels()$/;"	f
+attributeLabels	../../../work/projects/test_app/protected/models/LoginForm.php	/^	public function attributeLabels()$/;"	f
+authenticate	../../../work/projects/test_app/protected/components/UserIdentity.php	/^	public function authenticate()$/;"	f
+authenticate	../../../work/projects/test_app/protected/models/LoginForm.php	/^	public function authenticate($attribute,$params)$/;"	f
+body	../../../work/projects/test_app/protected/models/ContactForm.php	/^	public $body;$/;"	v
+breadcrumbs	../../../work/projects/test_app/protected/components/Controller.php	/^	public $breadcrumbs=array();$/;"	v
+breadcrumbs	../../../work/projects/test_app/protected/views/site/contact.php	/^$this->breadcrumbs=array($/;"	v
+breadcrumbs	../../../work/projects/test_app/protected/views/site/error.php	/^$this->breadcrumbs=array($/;"	v
+breadcrumbs	../../../work/projects/test_app/protected/views/site/login.php	/^$this->breadcrumbs=array($/;"	v
+breadcrumbs	../../../work/projects/test_app/protected/views/site/pages/about.php	/^$this->breadcrumbs=array($/;"	v
+config	../../../work/projects/test_app/index-test.php	/^$config=dirname(__FILE__).'\/protected\/config\/test.php';$/;"	v
+config	../../../work/projects/test_app/index.php	/^$config=dirname(__FILE__).'\/protected\/config\/main.php';$/;"	v
+config	../../../work/projects/test_app/protected/tests/bootstrap.php	/^$config=dirname(__FILE__).'\/..\/config\/test.php';$/;"	v
+config	../../../work/projects/test_app/protected/yiic.php	/^$config=dirname(__FILE__).'\/config\/console.php';$/;"	v
+duration	../../../work/projects/test_app/protected/models/LoginForm.php	/^			$duration=$this->rememberMe ? 3600*24*30 : 0; \/\/ 30 days$/;"	v
+email	../../../work/projects/test_app/protected/models/ContactForm.php	/^	public $email;$/;"	v
+errorCode	../../../work/projects/test_app/protected/components/UserIdentity.php	/^			$this->errorCode=self::ERROR_NONE;$/;"	v
+errorCode	../../../work/projects/test_app/protected/components/UserIdentity.php	/^			$this->errorCode=self::ERROR_PASSWORD_INVALID;$/;"	v
+errorCode	../../../work/projects/test_app/protected/components/UserIdentity.php	/^			$this->errorCode=self::ERROR_USERNAME_INVALID;$/;"	v
+headers	../../../work/projects/test_app/protected/controllers/SiteController.php	/^				$headers="From: $name <{$model->email}>\\r\\n".$/;"	v
+layout	../../../work/projects/test_app/protected/components/Controller.php	/^	public $layout='\/\/layouts\/column1';$/;"	v
+login	../../../work/projects/test_app/protected/models/LoginForm.php	/^	public function login()$/;"	f
+menu	../../../work/projects/test_app/protected/components/Controller.php	/^	public $menu=array();$/;"	v
+model	../../../work/projects/test_app/protected/controllers/SiteController.php	/^		$model=new ContactForm;$/;"	v
+model	../../../work/projects/test_app/protected/controllers/SiteController.php	/^		$model=new LoginForm;$/;"	v
+name	../../../work/projects/test_app/protected/controllers/SiteController.php	/^				$name='=?UTF-8?B?'.base64_encode($model->name).'?=';$/;"	v
+name	../../../work/projects/test_app/protected/models/ContactForm.php	/^	public $name;$/;"	v
+pageTitle	../../../work/projects/test_app/protected/views/site/contact.php	/^$this->pageTitle=Yii::app()->name . ' - Contact Us';$/;"	v
+pageTitle	../../../work/projects/test_app/protected/views/site/error.php	/^$this->pageTitle=Yii::app()->name . ' - Error';$/;"	v
+pageTitle	../../../work/projects/test_app/protected/views/site/index.php	/^$this->pageTitle=Yii::app()->name;$/;"	v
+pageTitle	../../../work/projects/test_app/protected/views/site/login.php	/^$this->pageTitle=Yii::app()->name . ' - Login';$/;"	v
+pageTitle	../../../work/projects/test_app/protected/views/site/pages/about.php	/^$this->pageTitle=Yii::app()->name . ' - About';$/;"	v
+password	../../../work/projects/test_app/protected/models/LoginForm.php	/^	public $password;$/;"	v
+rememberMe	../../../work/projects/test_app/protected/models/LoginForm.php	/^	public $rememberMe;$/;"	v
+rules	../../../work/projects/test_app/protected/models/ContactForm.php	/^	public function rules()$/;"	f
+rules	../../../work/projects/test_app/protected/models/LoginForm.php	/^	public function rules()$/;"	f
+setUp	../../../work/projects/test_app/protected/tests/WebTestCase.php	/^	protected function setUp()$/;"	f
+subject	../../../work/projects/test_app/protected/controllers/SiteController.php	/^				$subject='=?UTF-8?B?'.base64_encode($model->subject).'?=';$/;"	v
+subject	../../../work/projects/test_app/protected/models/ContactForm.php	/^	public $subject;$/;"	v
+tbl_user	../../../work/projects/test_app/protected/data/schema.mysql.sql	/^CREATE TABLE tbl_user ($/;"	t
+tbl_user	../../../work/projects/test_app/protected/data/schema.sqlite.sql	/^CREATE TABLE tbl_user ($/;"	t
+tbl_user.email	../../../work/projects/test_app/protected/data/schema.mysql.sql	/^    email VARCHAR(128) NOT NULL$/;"	F
+tbl_user.email	../../../work/projects/test_app/protected/data/schema.sqlite.sql	/^    email VARCHAR(128) NOT NULL$/;"	F
+tbl_user.id	../../../work/projects/test_app/protected/data/schema.mysql.sql	/^    id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,$/;"	F
+tbl_user.id	../../../work/projects/test_app/protected/data/schema.sqlite.sql	/^    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,$/;"	F
+tbl_user.password	../../../work/projects/test_app/protected/data/schema.mysql.sql	/^    password VARCHAR(128) NOT NULL,$/;"	F
+tbl_user.password	../../../work/projects/test_app/protected/data/schema.sqlite.sql	/^    password VARCHAR(128) NOT NULL,$/;"	F
+tbl_user.username	../../../work/projects/test_app/protected/data/schema.mysql.sql	/^    username VARCHAR(128) NOT NULL,$/;"	F
+tbl_user.username	../../../work/projects/test_app/protected/data/schema.sqlite.sql	/^    username VARCHAR(128) NOT NULL,$/;"	F
+testContact	../../../work/projects/test_app/protected/tests/functional/SiteTest.php	/^	public function testContact()$/;"	f
+testIndex	../../../work/projects/test_app/protected/tests/functional/SiteTest.php	/^	public function testIndex()$/;"	f
+testLoginLogout	../../../work/projects/test_app/protected/tests/functional/SiteTest.php	/^	public function testLoginLogout()$/;"	f
+username	../../../work/projects/test_app/protected/models/LoginForm.php	/^	public $username;$/;"	v
+users	../../../work/projects/test_app/protected/components/UserIdentity.php	/^		$users=array($/;"	v
+verifyCode	../../../work/projects/test_app/protected/models/ContactForm.php	/^	public $verifyCode;$/;"	v
+yii	../../../work/projects/test_app/index-test.php	/^$yii=dirname(__FILE__).'\/..\/yii\/framework\/yii.php';$/;"	v
+yii	../../../work/projects/test_app/index.php	/^$yii=dirname(__FILE__).'\/..\/yii\/framework\/yii.php';$/;"	v
+yiic	../../../work/projects/test_app/protected/yiic.php	/^$yiic=dirname(__FILE__).'\/..\/..\/yii\/framework\/yiic.php';$/;"	v
+yiit	../../../work/projects/test_app/protected/tests/bootstrap.php	/^$yiit=dirname(__FILE__).'\/..\/..\/..\/yii\/framework\/yiit.php';$/;"	v
