@@ -56,7 +56,6 @@ alias -s {avi,mpeg,mpg,mov,m2v,mp4,mkv,flv}=mplayer
 alias -s {jpg,jpeg,bmp,png,ico,gif}=feh
 alias chkwm="awesome --config ~/.config/awesome/rc.lua -k"
 alias mplayer='mplayer'
-alias vimsrv='vim --servername VIMSRV --remote'
 alias mv="mv -iv"
 alias rm="rm -i"
 alias ls="ls -X -F --group-directories-first --color=auto"
@@ -70,4 +69,5 @@ alias psg='ps -A | grep'
 alias ....='../../'
 alias aninfo='/home/nes/system/mpc/pls-handler.sh /home/nes/system/streams/animenfo.pls'
 alias t-r='transmission-remote'
+alias vimr='vim --servername GVIM --remote'
 echo; fortune; echo;
