@@ -73,7 +73,8 @@ set showcmd         " Display command
 set laststatus=2            " Always dislpay status line
 set statusline=%-3.3n\      " Buffer number
 set statusline+=%t          " Short filename
-set statusline+=\ [%{&ff}]  " Format  
+set statusline+=\ [%{&ff}\|  " Format  
+set statusline+=%{(&fenc==\"\"?&enc:&fenc)}]
 set statusline+=%m          " Modified flag
 set statusline+=%r          " Readonly flag
 set statusline+=%y          " Filetype
@@ -91,23 +92,32 @@ set smarttab
 set autoindent
 
 
-" Keymappings
-map N Nzz
-map n nzz
-noremap ; :
-noremap : ;
+"" Keymappings
+" Vimrc editing
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+
+" Moving around
+nnoremap N Nzz
+nnoremap n nzz
+nnoremap ; :
+nnoremap : ;
+nnoremap L $
+nnoremap H ^
 inoremap jj <ESC>
 inoremap <M-Space> <C-X><C-O>
 
+"" Autocmd
+autocmd FileType php    :setlocal colorcolumn=81
 
 
 " NERDTree configuration
-map <F12> ;NERDTreeToggle<CR>
+noremap <F12> :NERDTreeToggle<CR>
 let g:NERDTreeWinPos = "right"
 let NERDTreeShowHidden=1
 
 " Taglist configuration
-map <F11> ;TlistToggle<CR>
+noremap <F11> :TlistToggle<CR>
 
 " Neocomplete
 let g:neocomplcache_enable_at_startup = 1
