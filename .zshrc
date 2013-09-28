@@ -56,6 +56,8 @@ alias -s {avi,mpeg,mpg,mov,m2v,mp4,mkv,flv}=mplayer
 alias -s {jpg,jpeg,bmp,png,ico,gif}=feh
 alias chkwm="awesome --config ~/.config/awesome/rc.lua -k"
 alias mplayer='mplayer'
+alias vimsrv='vim --servername VIMSRV --remote'
+alias grep="ack-grep"
 alias mv="mv -iv"
 alias rm="rm -i"
 alias ls="ls -X -F --group-directories-first --color=auto"
@@ -64,10 +66,11 @@ alias df="df -h"
 alias cal="cal -m"
 alias du="du -h --max-depth=1 --exclude='./.*'"
 alias ping_g="ping -c 3 google.com"
-alias wget_mp3='wget -c -r -l 1 -A mp3 -np -nd'
 alias psg='ps -A | grep'
 alias ....='../../'
 alias aninfo='/home/nes/system/mpc/pls-handler.sh /home/nes/system/streams/animenfo.pls'
 alias t-r='transmission-remote'
-alias vimr='vim --servername GVIM --remote'
+
+eval "$(dircolors ~/.dir_colors)";
 echo; fortune; echo;
+

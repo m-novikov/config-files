@@ -1,0 +1,40 @@
+Xft.dpi: 96
+Xft.antialias: 0
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+Xft.rgba: rgb
+
+URxvt.font: xft:DejaVu Sans Mono:pixelsize=16:style=regular
+
+urxvt*background: #002b36
+urxvt*foreground: #839496
+urxvt*fading: 40
+urxvt*fadeColor: #002b36
+urxvt*cursorColor: #93a1a1
+urxvt*pointerColorBackground: #586e75
+urxvt*pointerColorForeground: #93a1a1
+
+urxvt*color0: #073642
+urxvt*color1: #dc322f
+urxvt*color2: #859900
+urxvt*color3: #b58900
+urxvt*color4: #268bd2
+urxvt*color5: #d33682
+urxvt*color6: #2aa198
+urxvt*color7: #eee8d5
+urxvt*color9: #cb4b16
+urxvt*color8: #002b36
+urxvt*color10: #586e75
+urxvt*color11: #657b83
+urxvt*color12: #839496
+urxvt*color13: #6c71c4
+urxvt*color14: #93a1a1
+urxvt*color15: #fdf6e3
+
+URxvt.urgentOnBell: true
+
+URxvt.perl-ext-common: default,tabbed,matcher,-option-popup,-selection-popup,-readline
+URxvt.matcher.button: 1
+URxvt.urlLauncher: firefox
+Emacs.font: -*-terminus-medium-*-*-*-16-*-*-*-*-*-*-u
+Vim.font: -*-terminus-medium-*-*-*-16-*-*-*-*-*-*-*

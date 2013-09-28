@@ -58,9 +58,10 @@ if has("gui_running")
 endif
 
 " Gnome term suppors 256 colors
-if $COLORTERM == 'gnome-terminal' 
+if $COLORTERM == 'gnome-terminal' || $COLORTERM == 'rxvt-xpm'
     set t_Co=256
     let g:solarized_termcolors=256 " Plz spare my eyes
+    let g:solarized_termtrans=1 
     set background=dark
     colors solarized      " Color scheme
 endif
