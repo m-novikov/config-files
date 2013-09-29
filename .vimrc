@@ -20,10 +20,18 @@ Bundle 'joonty/vdebug'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'Shougo/neocomplcache.vim'
 
-Bundle 'taglist.vim'
-Bundle 'bufexplorer.zip'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
+Bundle 'majutsushi/tagbar'
+Bundle 'matchit.zip'
+
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-speeddating'
+Bundle 'tpope/vim-fugitive'
+
+Bundle 'calendar.vim'
+Bundle 'jceb/vim-orgmode'
 
 
 filetype plugin indent on   
@@ -58,10 +66,10 @@ if has("gui_running")
 endif
 
 " Gnome term suppors 256 colors
-if $COLORTERM == 'gnome-terminal' || $COLORTERM == 'rxvt-xpm'
-    set t_Co=256
-    let g:solarized_termcolors=256 " Plz spare my eyes
-    let g:solarized_termtrans=1 
+if $COLORTERM == 'gnome-terminal' || $COLORTERM == 'rxvt-xpm' 
+    set t_Co=16
+    "let g:solarized_termcolors=256 " Plz spare my eyes
+    "let g:solarized_termtrans=1 
     set background=dark
     colors solarized      " Color scheme
 endif
@@ -94,6 +102,7 @@ set autoindent
 
 
 "" Keymappings
+let mapleader = ","
 " Vimrc editing
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
@@ -109,17 +118,23 @@ inoremap jj <ESC>
 inoremap <M-Space> <C-X><C-O>
 
 "" Autocmd
-autocmd FileType php    :setlocal colorcolumn=81
-
+autocmd FileType php    :setlocal colorcolumn=121
 
 " NERDTree configuration
 noremap <F12> :NERDTreeToggle<CR>
+nnoremap <leader>nt :NERDTreeToggle<CR>
 let g:NERDTreeWinPos = "right"
 let NERDTreeShowHidden=1
 
 " Taglist configuration
-noremap <F11> :TlistToggle<CR>
+noremap <F11> :TagbarToggle<CR>
+nnoremap <leader>tb :TagbarToggle<CR>
 
+nnoremap <leader>f     :FufCoverageFile<CR>
+nnoremap <leader>t     :FufBufferTag<CR>
+nnoremap <leader>b     :FufBuffer<CR>
+nnoremap <leader>d     :FufDir<CR>
+nnoremap <leader>at    :FufTag<CR>
 " Neocomplete
 let g:neocomplcache_enable_at_startup = 1
 
