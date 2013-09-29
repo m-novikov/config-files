@@ -6,6 +6,7 @@ Xft.rgba: rgb
 
 URxvt.font: xft:DejaVu Sans Mono:pixelsize=16:style=regular
 
+URxvt.intensityStyles: false
 urxvt*background: #002b36
 urxvt*foreground: #839496
 urxvt*fading: 40
