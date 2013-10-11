@@ -33,6 +33,9 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'calendar.vim'
 Bundle 'jceb/vim-orgmode'
 
+Bundle 'wavded/vim-stylus'
+Bundle 'mileszs/ack.vim'
+
 
 filetype plugin indent on   
 
@@ -84,6 +87,7 @@ set statusline=%-3.3n\      " Buffer number
 set statusline+=%t          " Short filename
 set statusline+=\ [%{&ff}\|  " Format  
 set statusline+=%{(&fenc==\"\"?&enc:&fenc)}]
+set statusline+=%{fugitive#statusline()}
 set statusline+=%m          " Modified flag
 set statusline+=%r          " Readonly flag
 set statusline+=%y          " Filetype
@@ -118,7 +122,16 @@ inoremap jj <ESC>
 inoremap <M-Space> <C-X><C-O>
 
 "" Autocmd
-autocmd FileType php    :setlocal colorcolumn=121
+augroup filetype_php 
+  autocmd FileType php    :setlocal colorcolumn=121
+augroup END
+
+augroup filetype_html 
+  autocmd!
+  autocmd FileType html :setlocal shiftwidth=2
+  autocmd FileType html :setlocal tabstop=2
+  autocmd FileType html inoremap <buffer> <C-k> &nbsp;
+augroup END
 
 " NERDTree configuration
 noremap <F12> :NERDTreeToggle<CR>
@@ -130,7 +143,8 @@ let NERDTreeShowHidden=1
 noremap <F11> :TagbarToggle<CR>
 nnoremap <leader>tb :TagbarToggle<CR>
 
-nnoremap <leader>f     :FufCoverageFile<CR>
+" FuzzyFinder
+nnoremap <leader>f     :FufFile<CR>
 nnoremap <leader>t     :FufBufferTag<CR>
 nnoremap <leader>b     :FufBuffer<CR>
 nnoremap <leader>d     :FufDir<CR>
