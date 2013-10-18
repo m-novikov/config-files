@@ -36,7 +36,6 @@ Bundle 'jceb/vim-orgmode'
 Bundle 'wavded/vim-stylus'
 Bundle 'mileszs/ack.vim'
 
-
 filetype plugin indent on   
 
 " Localization
@@ -128,8 +127,6 @@ augroup END
 
 augroup filetype_html 
   autocmd!
-  autocmd FileType html :setlocal shiftwidth=2
-  autocmd FileType html :setlocal tabstop=2
   autocmd FileType html inoremap <buffer> <C-k> &nbsp;
 augroup END
 
@@ -149,6 +146,7 @@ nnoremap <leader>t     :FufBufferTag<CR>
 nnoremap <leader>b     :FufBuffer<CR>
 nnoremap <leader>d     :FufDir<CR>
 nnoremap <leader>at    :FufTag<CR>
+nnoremap <leader>bm    :FufBookmarkDir<CR>
 " Neocomplete
 let g:neocomplcache_enable_at_startup = 1
 
@@ -170,3 +168,6 @@ if !exists('g:neocomplcache_keyword_patterns')
 endif
 
 let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
+
+" Synastic
+let g:syntastic_javascript_checkers=['jshint']

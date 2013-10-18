@@ -27,6 +27,7 @@ bindkey "^[[A" 	up-line-or-search ## up arrow for back-history-search
 bindkey "^[[B" 	down-line-or-search ## down arrow for fwd-history-search
 bindkey " " 	magic-space ## do history expansion on space
 
+
 # Aliases 
 alias -g G='| grep'
 alias -g T='| tail'
@@ -39,18 +40,22 @@ alias mplayer='mplayer'
 alias vimsrv='vim --servername VIMSRV --remote'
 alias mv="mv -iv"
 alias grep="ack-grep"
+alias less="less -r" # Colors for less pipe
 alias rm="rm -i"
 alias ls="ls -X -F --group-directories-first --color=auto"
 alias ll="ls -lh"
 alias df="df -h"
-alias cal="cal -m"
+alias cal="ncal -Mbm"
 alias du="du -h --max-depth=1 --exclude='./.*'"
 alias ping_g="ping -c 3 google.com"
 alias psg='ps -A | grep'
 alias ....='../../'
 alias t-r='transmission-remote'
+alias browse='chromium-browser'
 
-
+# Hashes
+hash -d ss=~/work/projects/sspure
+hash -d ssrr=~/work/projects/superstroy
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
